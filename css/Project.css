@@ -98,6 +98,12 @@ a {
     font-size: 10px;
 }
 
+.menu .project .project-menu-text {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
 /*컨택*/
 .contact {
     margin-left: 15px;
@@ -125,7 +131,13 @@ a {
     font-size: 10px;
 }
 
-/*메인 콘텐츠*/
+/*제목*/
+.title {
+    font-style:italic ;
+    margin-bottom: 5px;
+}
+
+/*컨텐츠*/
 .main-content {
     margin-left: 180px;
     padding-left: 20px;
@@ -136,23 +148,46 @@ a {
     flex-direction: column;
     justify-content: center;
 }
-
-.main-content .s1 {
-    font-size: 25px;
-    margin-bottom: 9px;
-}
-
-.main-content >a {
+.main-content > .content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    margin-top: 15px;
-    width: 90px;
-    height : 28px;
-    background-color: #6468B7;
-    color: #ffffff;
-    border: none;
-    border-radius :4px;
+    flex-wrap: wrap;
+    gap:10px;
 }
 
+.main-content > .content> .content-detail{
+    background-color: #F6F0DF;
+    border: 2px solid #DED4B2;
+    margin-bottom: 10px;
+
+    border-radius: 20px;
+    padding: 30px 20px 30px;
+    flex: 0 0 35%;
+
+
+}
+
+.ex > .title {
+    font-weight: bold;
+    font-style: normal;
+    color:#6468B7;
+}
+
+.ex .explain {
+    font-size: 13px;
+}
+
+.ex .explain {
+    margin-bottom: 10px;
+}
+
+.ex .github-btn {
+    background-color: #EEE8D5;
+    border : 1px solid #DED4B2;
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 5px 8px 5px;
+    display :inline-block;
+    text-align:center;
+    width: 80px;
+    height: 30px;
+}

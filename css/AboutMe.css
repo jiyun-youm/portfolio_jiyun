@@ -7,6 +7,8 @@
 
 body {
     background-color: #FDF9EE;
+    /*display: flex;*/
+    /*justify-content: center;*/
 }
 
 html, body {
@@ -98,6 +100,12 @@ a {
     font-size: 10px;
 }
 
+.menu .aboutme .aboutme-text {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
 /*컨택*/
 .contact {
     margin-left: 15px;
@@ -125,7 +133,13 @@ a {
     font-size: 10px;
 }
 
-/*메인 콘텐츠*/
+
+/*제목*/
+.title {
+    font-style:italic ;
+    margin-bottom: 5px;
+}
+
 .main-content {
     margin-left: 180px;
     padding-left: 20px;
@@ -137,22 +151,70 @@ a {
     justify-content: center;
 }
 
-.main-content .s1 {
-    font-size: 25px;
-    margin-bottom: 9px;
+/*프로필*/
+.profile {
+    display : flex;
 }
 
-.main-content >a {
+.profile .selfi {
+    width:300px;
+}
+
+.profile .info {
+    margin-top: 50px;
+}
+
+.educated-title {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    margin-top: 15px;
-    width: 90px;
-    height : 28px;
-    background-color: #6468B7;
-    color: #ffffff;
-    border: none;
-    border-radius :4px;
+
 }
 
+.educated-title>img{
+    width: 20px;
+}
+
+.educated .text >p {
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+.certifications-title{
+    display: flex;
+    margin-top: 10px;
+}
+
+.certifications-title>img{
+    width: 20px;
+    height:20px;
+}
+
+.certifications >p{
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+.story {
+    background-color: #F6F0DF;
+    border: 2px solid #DED4B2;
+    border-radius: 20px;
+    padding: 30px 20px 30px;
+    width: 710px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story .story-detail .story-title {
+    font-size: 20px;
+    font-weight: bold;
+    color:#6468B7;
+}
+
+.story .story-detail .story-content {
+    font-size: 14px;
+}
+
+.story .blank {
+    height:20px
+}
