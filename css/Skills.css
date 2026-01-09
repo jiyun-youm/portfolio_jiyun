@@ -31,8 +31,9 @@ a {
 
 .bar .name {
     display: flex;
-    margin-top:0;
-    margin-bottom: 0;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .bar .name .me {
@@ -51,6 +52,17 @@ a {
 .barAboutMe {
     display: flex;
     flex-direction: column;
+    margin:10px 10px 10px;
+}
+
+.barAboutMe .bar-title {
+    display: flex;
+}
+
+.barAboutMe .bar-title >img {
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
 }
 
 .barAboutMe .title {
@@ -80,8 +92,8 @@ a {
 }
 
 .menu .experience>img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 
 .menu .skills>img {
@@ -109,7 +121,12 @@ a {
     margin-left: 15px;
 }
 
-.contact .title {
+.contact .contact-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.menu>div>a:hover{
     font-weight: bold;
 }
 
@@ -129,6 +146,14 @@ a {
 
 .contact >div >div>p {
     font-size: 10px;
+}
+
+.contact-name {
+    font-size: 10px;
+}
+
+.contact-name:hover {
+    font-weight: bold;
 }
 
 /*제목*/
@@ -153,6 +178,12 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap:10px;
+}
+
+@media(max-width: 768px){
+    .content-detail{
+        flex-direction: column;
+    }
 }
 
 
